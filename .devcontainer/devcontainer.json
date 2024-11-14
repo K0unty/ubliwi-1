@@ -1,5 +1,5 @@
 {
-  "image": " "image": "kalilinux/kali-rolling:latest"",
+  "image": "kalilinux/kali-rolling:latest",
   "features": {
   }
 }
