@@ -18,6 +18,7 @@ Start container from docker or run existing one
 c1='docker container run -it kalilinux/kali-rolling sh'
 c2='docker run -v ./filez:/filez -it kalilinux/kali-rolling:latest'
 c3='docker run -v ./filez:/filez -it happy_jackson'
+c4='docker run -v ./filez:/filez -it lrgc01/kali-desktop'
 
 # Functions
 b1() {
@@ -26,8 +27,8 @@ b1() {
 }
 
 co() {
-    echo -e "${GR}${c2}${NC}"
-    $c2
+    echo -e "${GR}${c4}${NC}"
+    $c4
 }
 
 # Run
