@@ -7,7 +7,12 @@
 https://hub.docker.com/r/kalilinux/kali-rolling 
 - This is the main docker image which you are dl 
 - ass and pusssssy 
-- 
+
+
+## Linux Server Docker 
+
+https://hub.docker.com/r/linuxserver/kali-linux
+
 
 # Reference 
 
