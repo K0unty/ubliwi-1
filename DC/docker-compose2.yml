@@ -1,0 +1,18 @@
+services:
+  kali-linux:
+    image: docker.io/kalilinux/kali-rolling # or use a custom image with GUI support
+    container_name: kali-linux
+    security_opt:
+      - seccomp:unconfined #optional
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - DISPLAY=:99 # For X11 forwarding, adjust as necessary
+    volumes:
+      - /path/to/data:/config
+      - /tmp/.X11-unix:/tmp/.X11-unix # For X11 forwarding
+    ports:
+      - 5900:5900 # For VNC access
+      - 8080:8080 # For noVNC access if using noVNC
+    command: ["startx", "--", "-nolisten", "tcp"] # Start the X server
